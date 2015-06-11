@@ -12,8 +12,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     respond_to do |format|
       if @result = @user.save
-        log_in @user
-        format.html { redirect_to @user, notice: "Save process completed!" }
+        @user.send_activation_email
+        flash[:info] = "Please check your email to activate your account."
+        #log_in @user
+        format.html { redirect_to @user, notice: "Please check your email to activate your account" }
         format.js  # rails redirects to /users/create.js.erb
       else
         format.html { 
