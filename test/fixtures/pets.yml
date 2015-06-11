@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type_id: 1
+  user_id: 1
+  breed: MyString
+  zipcode: 1
+  age: 1
+  sex: MyString
+  description: MyString
+  is_reported: 1
+
+two:
+  name: MyString
+  type_id: 1
+  user_id: 1
+  breed: MyString
+  zipcode: 1
+  age: 1
+  sex: MyString
+  description: MyString
+  is_reported: 1

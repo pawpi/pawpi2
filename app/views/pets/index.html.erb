@@ -1,0 +1,61 @@
+ <div class='col-xs-12 content-border' style = 'background-color: #286090! important;'>
+    <div class='padding'></div>
+    <div class='col-xs-12 move-up img-background' style = ' overflow: hidden; max-height: 255px; text-align: center;'>
+    	<%= image_tag("pawpiwallpaper.jpg") %>
+    </div>
+        <div class="col-xs-4" style = 'position: absolute; z-index: 1; left: 19%; top: 40px;'>
+            <div class='row row-padding-small'></div>
+            <div class='content-square content-box content-background' style = "max-height: 255px;">
+                <div class='content-square-top content-square-left'></div>
+                <div class='content-square-top content-square-right'></div>
+                <div class='content-square-bottom content-square-right'></div>
+                <div class='content-square-bottom content-square-left'></div>
+                <p class="content-box-header">pawpi</p>
+                <p>We are a San Francisco based Pet Adoption Service, our goal at Pawpi is to make sure that our furry little friends will be able
+                to find a safe and loving home as soon as possible, For more info please go to our <a href='#'>About Us</a></p>
+            </div>
+            <div class='row row-padding-small'></div>
+        </div>
+</div>
+<div class='row row-padding-small'></div>   
+<div class='col-xs-2' style = ''>
+    <!-- filters -->
+    <div class='padding'></div>
+    <div class="col-xs-12 content-background img-shadow content-div" >
+
+    </div>
+    <!-- end filters -->
+</div>
+    <!-- results area -->
+<div class='col-xs-10' style = ''>
+    <div class='padding'></div>
+    <div class="col-xs-12 content-background img-shadow content-div"  id ="imgGallery">
+        <div class="content-box-header">
+            <p>Find A Pet Today!</p>
+        </div>
+        <div class="col-xs-12">
+            <span style=' float: right; text-align: right; color: #d58512;' id = 'totalResults'> </span>
+            <div style="position:absolute; right: -3em; top: -125px;">
+                <!-- <%= image_tag("mylogocat.png", size: "100x100") %> -->
+            </div>
+        </div>
+        <div id="box" class="row"></div>
+    </div>    
+</div>
+
+<div class='row row-padding'></div>
+<div class='row row-padding'></div>
+<div class='row row-padding'></div>
+<div class='row row-padding'></div>
+    <!-- end results -->
+<!-- End of Home Page -->
+<!-- scripts -->    
+<script>
+      //update when page first loads 
+$(window).load(function(){
+ $('.img-background').find('img').each(function(){
+  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+  $(this).addClass(imgClass);
+ });
+});
+</script> 

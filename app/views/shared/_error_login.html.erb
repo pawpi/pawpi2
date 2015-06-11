@@ -1,0 +1,7 @@
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+	  <% flash.each do |key, value| %>
+  		<%= content_tag :div, value, class: "flash #{key}" %>
+	  <% end %>
+    </div>
+  </div>

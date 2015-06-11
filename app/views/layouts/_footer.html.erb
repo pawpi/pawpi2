@@ -1,0 +1,41 @@
+<!--Register Modal-->
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content ">
+  <div class="col-xs-12 img-shadow" style=" text-align: center; background: rgba(255,255,255,255)">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <div id='register_content'>         
+    <h1>Sign Up</h1>
+    <div class='row row-padding' id = 'register_details'></div> 
+    <div class='col-xs-4'></div>
+    <div class='col-xs-4' style='text-align: left;'>
+	  <%= render 'users/new'%>
+	</div>
+	</div>      
+  </div>
+</div>
+</div>
+</div>
+<!-- End of Register Modal -->
+<!--Login Modal-->
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content ">
+  <div class="col-xs-12 img-shadow" style=" text-align: center; background: rgba(255,255,255,255)">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <div id='login_content'>         
+    <h1>Log In</h1>
+    <div class='row row-padding' id = 'login_details'></div> 
+    <div class='col-xs-4'></div>
+    <div class='col-xs-4' style='text-align: left;'>
+	  <%= render 'sessions/new'%>
+	</div>
+	</div>      
+  </div>
+</div>
+</div>
+</div>
+<!-- End of Login Modal -->
+

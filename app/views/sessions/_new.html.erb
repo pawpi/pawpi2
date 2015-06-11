@@ -1,0 +1,19 @@
+    
+<%= form_for(:session, url: login_path, remote: true) do |f| %>
+  <%= render 'shared/error_messages' %>
+  <%= f.label :email , :style=>'text-align:left !important;' %><br>
+  <%= f.email_field :email %><br>
+  <%= f.label :password , :style=>'text-align:left !important;'%><br>
+  <%= f.password_field :password %><br>
+ 
+  <%= f.label :remember_me, class: "checkbox", :style=> 'position: absolute; padding-left: 20px !important;' do %>
+  	<%= f.check_box :remember_me %>
+  	<span>Stay signed in</span>
+  <% end %>
+
+  <div class='row row-padding'></div>
+  <div class='row row-padding'></div>
+  
+  <%= f.submit "Log In", class: "btn btn-primary", :style=>'width:100%;', id: "login_id" %>
+<% end %>
+<div class='row row-padding'></div>

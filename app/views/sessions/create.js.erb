@@ -1,0 +1,8 @@
+<% if logged_in? %>
+  jQuery('#nav_links').html('');
+  $('#nav_links').html('<%= j(render 'shared/nav_links') %>');
+  jQuery.noConflict();
+  $("#loginModal").modal('hide');
+<% else %>
+  $('#login_details').html('<%= j(render :partial => 'shared/error_login') %>');
+<% end %>

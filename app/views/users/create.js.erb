@@ -1,0 +1,9 @@
+<% if @result %>
+  content  = "<h1>Thanks For Registering</h1><div class='row row-padding'></div><span>An Email Has Been Sent To <%=@user.email%></span>"
+  content += "<div class='row row-padding'></div>"
+  document.getElementById("register_content").innerHTML = content
+  $('#nav_links').html('<%= j(render 'shared/nav_links') %>');
+
+<% else %>
+  $('#register_details').html('<%= j(render :partial => 'shared/error_messages', :object => @user) %>');
+<% end %>
